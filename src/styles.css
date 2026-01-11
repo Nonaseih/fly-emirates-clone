@@ -1,0 +1,25 @@
+/* Font-face placeholder: place the actual EK0plain - M02 font file in `public/fonts/` */
+@font-face {
+	font-family: 'EK0plain-M02';
+	/* Add your font file at public/fonts/EK0plain-M02.woff2 */
+	src: url('/fonts/EK0plain-M02.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* minimal reset/styles for the prototype */
+html,body,#root{height:100%}
+body{font-family:system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
+
+/* keep same small brand tweak */
+.brand-font{font-weight:700;letter-spacing:0.5px}
+
+/* logo uses EK0plain if available, falls back to system UI */
+.logo-font{font-family:'EK0plain-M02', system-ui, -apple-system, 'Segoe UI', Roboto, Arial}
+
+/* nav links: UI sans-serif stack */
+.nav-ui{font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Arial}
+
+/* hero font approximation; replace with preferred webfont later */
+.hero-font{font-family:Georgia, 'Times New Roman', serif}
